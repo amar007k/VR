@@ -56,3 +56,73 @@ h1{
     letter-spacing: 5px;
 
 }
+/* Media Queries for responsiveness */
+
+/* For small screens like mobile phones */
+@media (max-width: 600px) {
+    body {
+        gap: 15px; /* Smaller gap between elements */
+    }
+
+    #logo {
+        width: 40vw; /* Increase size on smaller screens */
+    }
+
+    h1 {
+        font-size: 2rem; /* Smaller font size */
+    }
+
+    #name, #va {
+        font-size: 1.5rem; /* Adjust text size */
+    }
+
+    #btn {
+        width: 50%; /* Make button larger for easier touch targets */
+        padding: 15px;
+        font-size: 1rem; /* Adjust font size */
+    }
+}
+
+/* For tablets and mid-size devices */
+@media (max-width: 768px) {
+    body {
+        gap: 20px;
+    }
+
+    #logo {
+        width: 30vw;
+    }
+
+    h1 {
+        font-size: 2.3rem;
+    }
+
+    #name, #va {
+        font-size: 1.8rem;
+    }
+
+    #btn {
+        width: 40%;
+        font-size: 1.1rem;
+    }
+}
+
+/* For larger desktops */
+@media (min-width: 1200px) {
+    #logo {
+        width: 15vw; /* Reduce size for large desktops */
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    #name, #va {
+        font-size: 2.5rem;
+    }
+
+    #btn {
+        width: 25%;
+        font-size: 1.2rem;
+    }
+}
